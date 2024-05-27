@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: theme('colors.beigeBase');
+  }
+
+  /* Estilo da barra de rolagem */
+  .scrollbar::-webkit-scrollbar {
+    width: 16px;
+    /* Largura da barra de rolagem */
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    background: theme('colors.beigeBase');
+    /* Cor de fundo do trilho */
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: theme('colors.yellowBase');
+    /* Cor do polegar da barra de rolagem */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    border: 3px solid theme('colors.beigeBase');
+    /* Espaçamento ao redor do polegar */
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: theme('colors.orangeBase');
+    /* Cor do polegar ao passar o mouse */
+  }
+
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
